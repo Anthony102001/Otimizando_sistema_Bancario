@@ -1,6 +1,3 @@
-import textwrap
-
-
 def menu():
     menu = """\n
     ================ MENU ================
@@ -11,7 +8,7 @@ def menu():
     [5]\tNovo usuário
     [6]\tSair
     => """
-    return input(textwrap.dedent(menu))
+    return input((menu))
 
 
 def depositar(saldo, valor, extrato, /):
@@ -99,7 +96,7 @@ def listar_contas(contas):
             Titular:\t{conta['usuario']['nome']}
         """
         print("=" * 100)
-        print(textwrap.dedent(linha))
+        print((linha))
 
 
 def main():
